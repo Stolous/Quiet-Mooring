@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C668723186044DC00687DAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668722186044DC00687DAA /* Foundation.framework */; };
+		9C668725186044DC00687DAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668724186044DC00687DAA /* CoreGraphics.framework */; };
+		9C668727186044DC00687DAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668726186044DC00687DAA /* UIKit.framework */; };
+		9C66872D186044DD00687DAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C66872B186044DD00687DAA /* InfoPlist.strings */; };
+		9C66872F186044DD00687DAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C66872E186044DD00687DAA /* main.m */; };
+		9C668733186044DD00687DAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C668732186044DD00687DAA /* AppDelegate.m */; };
+		9C668736186044DD00687DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C668734186044DD00687DAA /* Main.storyboard */; };
+		9C668739186044DD00687DAA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C668738186044DD00687DAA /* MainViewController.m */; };
+		9C66873C186044DD00687DAA /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C66873B186044DD00687DAA /* FlipsideViewController.m */; };
+		9C66873E186044DD00687DAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C66873D186044DD00687DAA /* Images.xcassets */; };
+		9C668745186044DD00687DAA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668744186044DD00687DAA /* XCTest.framework */; };
+		9C668746186044DD00687DAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668722186044DC00687DAA /* Foundation.framework */; };
+		9C668747186044DD00687DAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668726186044DC00687DAA /* UIKit.framework */; };
+		9C66874F186044DD00687DAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C66874D186044DD00687DAA /* InfoPlist.strings */; };
+		9C668751186044DD00687DAA /* Quiet_MooringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C668750186044DD00687DAA /* Quiet_MooringTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C668748186044DD00687DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C668717186044DC00687DAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C66871E186044DC00687DAA;
+			remoteInfo = "Quiet Mooring";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C66871F186044DC00687DAA /* Quiet Mooring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiet Mooring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C668722186044DC00687DAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C668724186044DC00687DAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9C668726186044DC00687DAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9C66872A186044DD00687DAA /* Quiet Mooring-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quiet Mooring-Info.plist"; sourceTree = "<group>"; };
+		9C66872C186044DD00687DAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C66872E186044DD00687DAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C668730186044DD00687DAA /* Quiet Mooring-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quiet Mooring-Prefix.pch"; sourceTree = "<group>"; };
+		9C668731186044DD00687DAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C668732186044DD00687DAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C668735186044DD00687DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C668737186044DD00687DAA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9C668738186044DD00687DAA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9C66873A186044DD00687DAA /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		9C66873B186044DD00687DAA /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		9C66873D186044DD00687DAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C668743186044DD00687DAA /* Quiet MooringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quiet MooringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C668744186044DD00687DAA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9C66874C186044DD00687DAA /* Quiet MooringTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quiet MooringTests-Info.plist"; sourceTree = "<group>"; };
+		9C66874E186044DD00687DAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C668750186044DD00687DAA /* Quiet_MooringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiet_MooringTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C66871C186044DC00687DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C668725186044DC00687DAA /* CoreGraphics.framework in Frameworks */,
+				9C668727186044DC00687DAA /* UIKit.framework in Frameworks */,
+				9C668723186044DC00687DAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C668740186044DD00687DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C668745186044DD00687DAA /* XCTest.framework in Frameworks */,
+				9C668747186044DD00687DAA /* UIKit.framework in Frameworks */,
+				9C668746186044DD00687DAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C668716186044DC00687DAA = {
+			isa = PBXGroup;
+			children = (
+				9C668728186044DC00687DAA /* Quiet Mooring */,
+				9C66874A186044DD00687DAA /* Quiet MooringTests */,
+				9C668721186044DC00687DAA /* Frameworks */,
+				9C668720186044DC00687DAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C668720186044DC00687DAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C66871F186044DC00687DAA /* Quiet Mooring.app */,
+				9C668743186044DD00687DAA /* Quiet MooringTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C668721186044DC00687DAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C668722186044DC00687DAA /* Foundation.framework */,
+				9C668724186044DC00687DAA /* CoreGraphics.framework */,
+				9C668726186044DC00687DAA /* UIKit.framework */,
+				9C668744186044DD00687DAA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C668728186044DC00687DAA /* Quiet Mooring */ = {
+			isa = PBXGroup;
+			children = (
+				9C668731186044DD00687DAA /* AppDelegate.h */,
+				9C668732186044DD00687DAA /* AppDelegate.m */,
+				9C668734186044DD00687DAA /* Main.storyboard */,
+				9C668737186044DD00687DAA /* MainViewController.h */,
+				9C668738186044DD00687DAA /* MainViewController.m */,
+				9C66873A186044DD00687DAA /* FlipsideViewController.h */,
+				9C66873B186044DD00687DAA /* FlipsideViewController.m */,
+				9C66873D186044DD00687DAA /* Images.xcassets */,
+				9C668729186044DC00687DAA /* Supporting Files */,
+			);
+			path = "Quiet Mooring";
+			sourceTree = "<group>";
+		};
+		9C668729186044DC00687DAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C66872A186044DD00687DAA /* Quiet Mooring-Info.plist */,
+				9C66872B186044DD00687DAA /* InfoPlist.strings */,
+				9C66872E186044DD00687DAA /* main.m */,
+				9C668730186044DD00687DAA /* Quiet Mooring-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C66874A186044DD00687DAA /* Quiet MooringTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C668750186044DD00687DAA /* Quiet_MooringTests.m */,
+				9C66874B186044DD00687DAA /* Supporting Files */,
+			);
+			path = "Quiet MooringTests";
+			sourceTree = "<group>";
+		};
+		9C66874B186044DD00687DAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C66874C186044DD00687DAA /* Quiet MooringTests-Info.plist */,
+				9C66874D186044DD00687DAA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C66871E186044DC00687DAA /* Quiet Mooring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C668754186044DD00687DAA /* Build configuration list for PBXNativeTarget "Quiet Mooring" */;
+			buildPhases = (
+				9C66871B186044DC00687DAA /* Sources */,
+				9C66871C186044DC00687DAA /* Frameworks */,
+				9C66871D186044DC00687DAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quiet Mooring";
+			productName = "Quiet Mooring";
+			productReference = 9C66871F186044DC00687DAA /* Quiet Mooring.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C668742186044DD00687DAA /* Quiet MooringTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C668757186044DD00687DAA /* Build configuration list for PBXNativeTarget "Quiet MooringTests" */;
+			buildPhases = (
+				9C66873F186044DD00687DAA /* Sources */,
+				9C668740186044DD00687DAA /* Frameworks */,
+				9C668741186044DD00687DAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C668749186044DD00687DAA /* PBXTargetDependency */,
+			);
+			name = "Quiet MooringTests";
+			productName = "Quiet MooringTests";
+			productReference = 9C668743186044DD00687DAA /* Quiet MooringTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C668717186044DC00687DAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Magic Compagny";
+				TargetAttributes = {
+					9C668742186044DD00687DAA = {
+						TestTargetID = 9C66871E186044DC00687DAA;
+					};
+				};
+			};
+			buildConfigurationList = 9C66871A186044DC00687DAA /* Build configuration list for PBXProject "Quiet Mooring" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C668716186044DC00687DAA;
+			productRefGroup = 9C668720186044DC00687DAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C66871E186044DC00687DAA /* Quiet Mooring */,
+				9C668742186044DD00687DAA /* Quiet MooringTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C66871D186044DC00687DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C66873E186044DD00687DAA /* Images.xcassets in Resources */,
+				9C66872D186044DD00687DAA /* InfoPlist.strings in Resources */,
+				9C668736186044DD00687DAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C668741186044DD00687DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C66874F186044DD00687DAA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C66871B186044DC00687DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C668733186044DD00687DAA /* AppDelegate.m in Sources */,
+				9C668739186044DD00687DAA /* MainViewController.m in Sources */,
+				9C66873C186044DD00687DAA /* FlipsideViewController.m in Sources */,
+				9C66872F186044DD00687DAA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C66873F186044DD00687DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C668751186044DD00687DAA /* Quiet_MooringTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C668749186044DD00687DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C66871E186044DC00687DAA /* Quiet Mooring */;
+			targetProxy = 9C668748186044DD00687DAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C66872B186044DD00687DAA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C66872C186044DD00687DAA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9C668734186044DD00687DAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C668735186044DD00687DAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C66874D186044DD00687DAA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C66874E186044DD00687DAA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C668752186044DD00687DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9C668753186044DD00687DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C668755186044DD00687DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quiet Mooring/Quiet Mooring-Prefix.pch";
+				INFOPLIST_FILE = "Quiet Mooring/Quiet Mooring-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9C668756186044DD00687DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quiet Mooring/Quiet Mooring-Prefix.pch";
+				INFOPLIST_FILE = "Quiet Mooring/Quiet Mooring-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9C668758186044DD00687DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quiet Mooring.app/Quiet Mooring";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quiet Mooring/Quiet Mooring-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Quiet MooringTests/Quiet MooringTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9C668759186044DD00687DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quiet Mooring.app/Quiet Mooring";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quiet Mooring/Quiet Mooring-Prefix.pch";
+				INFOPLIST_FILE = "Quiet MooringTests/Quiet MooringTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C66871A186044DC00687DAA /* Build configuration list for PBXProject "Quiet Mooring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C668752186044DD00687DAA /* Debug */,
+				9C668753186044DD00687DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C668754186044DD00687DAA /* Build configuration list for PBXNativeTarget "Quiet Mooring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C668755186044DD00687DAA /* Debug */,
+				9C668756186044DD00687DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9C668757186044DD00687DAA /* Build configuration list for PBXNativeTarget "Quiet MooringTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C668758186044DD00687DAA /* Debug */,
+				9C668759186044DD00687DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C668717186044DC00687DAA /* Project object */;
+}
