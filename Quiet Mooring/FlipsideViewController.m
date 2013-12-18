@@ -8,6 +8,8 @@
 
 #import "FlipsideViewController.h"
 
+#import "MainViewController.h"
+
 @interface FlipsideViewController ()
 
 @end
@@ -17,7 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background"]];
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,4 +36,13 @@
     [self.delegate flipsideViewControllerDidFinish:self];
 }
 
+- (IBAction)sonnerie:(id)sender {
+	
+	self.sonnerieActive = !self.sonnerieActive;
+}
+
+- (IBAction)vibreur:(id)sender {
+	
+	self.vibreurActive = !self.vibreurActive;
+}
 @end

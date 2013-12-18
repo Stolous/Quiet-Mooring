@@ -8,6 +8,20 @@
 
 #import "FlipsideViewController.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+	
+	BOOL active;
+	
+	int distanceActivation;
+}
+
+@property (weak, nonatomic) IBOutlet UIButton *boutonPrincipal;
+- (IBAction)appuiBoutonPrincipal:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *texteInfo;
+
+@property (nonatomic, assign) BOOL sonnerieActive;
+@property (nonatomic, assign) BOOL vibreurActive;
+
 
 @end
