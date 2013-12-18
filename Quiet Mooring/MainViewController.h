@@ -23,5 +23,4 @@
 @property (nonatomic, assign) BOOL sonnerieActive;
 @property (nonatomic, assign) BOOL vibreurActive;
 
-
 @end

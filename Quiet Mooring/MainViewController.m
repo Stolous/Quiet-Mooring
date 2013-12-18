@@ -19,7 +19,6 @@
     [super viewDidLoad];
 	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background"]];
 	active = FALSE; // TODO récupérer le fait que le systeme était activé lors de la dernière fermeture.
-	
 }
 
 - (void)didReceiveMemoryWarning

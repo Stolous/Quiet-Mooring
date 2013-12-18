@@ -20,7 +20,6 @@
 {
     [super viewDidLoad];
 	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background"]];
-	
 }
 
 - (void)didReceiveMemoryWarning
