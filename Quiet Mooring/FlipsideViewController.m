@@ -10,6 +10,7 @@
 
 #import "MainViewController.h"
 
+
 @interface FlipsideViewController ()
 
 @end
@@ -20,6 +21,23 @@
 {
     [super viewDidLoad];
 	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background"]];
+	
+	/*NSString *fileConfig = [[NSBundle mainBundle] pathForResource:@"Options" ofType:@"qmconfig"];
+	NSData *data = [[NSData alloc]initWithContentsOfFile:fileConfig];
+	NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+	
+	
+	NSLog(@"%@", [string substringWithRange: NSMakeRange (0, 0)]);*/
+	
+//	NSMutableDictionary *dico = [[NSMutableDictionary alloc] init];
+//	[dico setObject:TRUE forKey:@"sonnerieActive"];
+	NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+	if ([userDefault boolForKey:@"sonnerieActive"]) {
+		<#statements#>
+	}
+	[userDefault setBool:TRUE forKey:@"sonnerieActive"];
+	[userDefault setBool:TRUE forKey:@"vibreurActive"];
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,11 +55,13 @@
 
 - (IBAction)sonnerie:(id)sender {
 	
-	self.sonnerieActive = !self.sonnerieActive;
+	self.sonnerieActive = !(self.sonnerieActive);
+	NSLog(@"%hhd", self.sonnerieActive);
 }
 
 - (IBAction)vibreur:(id)sender {
 	
-	self.vibreurActive = !self.vibreurActive;
+	self.vibreurActive = !(self.vibreurActive);
+	NSLog(@"%hhd", self.vibreurActive);
 }
 @end

@@ -22,6 +22,7 @@
 		9C668747186044DD00687DAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668726186044DC00687DAA /* UIKit.framework */; };
 		9C66874F186044DD00687DAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C66874D186044DD00687DAA /* InfoPlist.strings */; };
 		9C668751186044DD00687DAA /* Quiet_MooringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C668750186044DD00687DAA /* Quiet_MooringTests.m */; };
+		9C9E2DC21861E42F00F396B7 /* Options.qmconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9C9E2DC11861E42F00F396B7 /* Options.qmconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		9C66874C186044DD00687DAA /* Quiet MooringTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quiet MooringTests-Info.plist"; sourceTree = "<group>"; };
 		9C66874E186044DD00687DAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C668750186044DD00687DAA /* Quiet_MooringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiet_MooringTests.m; sourceTree = "<group>"; };
+		9C9E2DC11861E42F00F396B7 /* Options.qmconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = Options.qmconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		9C668716186044DC00687DAA = {
 			isa = PBXGroup;
 			children = (
+				9C9E2DBE1861B63E00F396B7 /* Resources */,
 				9C668728186044DC00687DAA /* Quiet Mooring */,
 				9C66874A186044DD00687DAA /* Quiet MooringTests */,
 				9C668721186044DC00687DAA /* Frameworks */,
@@ -155,6 +158,14 @@
 				9C66874D186044DD00687DAA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C9E2DBE1861B63E00F396B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C9E2DC11861E42F00F396B7 /* Options.qmconfig */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9E2DC21861E42F00F396B7 /* Options.qmconfig in Resources */,
 				9C66873E186044DD00687DAA /* Images.xcassets in Resources */,
 				9C66872D186044DD00687DAA /* InfoPlist.strings in Resources */,
 				9C668736186044DD00687DAA /* Main.storyboard in Resources */,
