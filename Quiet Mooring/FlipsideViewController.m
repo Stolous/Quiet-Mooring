@@ -22,21 +22,13 @@
     [super viewDidLoad];
 	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background"]];
 	
-	/*NSString *fileConfig = [[NSBundle mainBundle] pathForResource:@"Options" ofType:@"qmconfig"];
-	NSData *data = [[NSData alloc]initWithContentsOfFile:fileConfig];
-	NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+	NSDictionary *userDefaultsDefaults = [NSDictionary dictionaryWithObjectsAndKeys:
+										  [NSNumber numberWithBool:YES], @"sonnerieActive",
+										  [NSNumber numberWithBool:NO], @"vibreurActive", Nil];
+	[[NSUserDefaults standardUserDefaults] registerDefaults:userDefaultsDefaults];
 	
-	
-	NSLog(@"%@", [string substringWithRange: NSMakeRange (0, 0)]);*/
-	
-//	NSMutableDictionary *dico = [[NSMutableDictionary alloc] init];
-//	[dico setObject:TRUE forKey:@"sonnerieActive"];
-	NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-	if ([userDefault boolForKey:@"sonnerieActive"]) {
-		<#statements#>
-	}
-	[userDefault setBool:TRUE forKey:@"sonnerieActive"];
-	[userDefault setBool:TRUE forKey:@"vibreurActive"];
+	[_switchSonnerie setOn:[[NSUserDefaults standardUserDefaults] boolForKey:@"sonnerieActive"] animated:NO];
+	[_switchVibreur setOn:[[NSUserDefaults standardUserDefaults] boolForKey:@"vibreurActive"] animated:NO];
 	
 }
 
@@ -50,18 +42,21 @@
 
 - (IBAction)done:(id)sender
 {
+	NSLog(@"sonnerie: %@ vibreur: %@", [[NSUserDefaults standardUserDefaults] boolForKey:@"sonnerieActive"] ? @"Oui" : @"Non",[[NSUserDefaults standardUserDefaults] boolForKey:@"vibreurActive"] ? @"Oui" : @"Non");
+	
+	
     [self.delegate flipsideViewControllerDidFinish:self];
 }
 
 - (IBAction)sonnerie:(id)sender {
-	
-	self.sonnerieActive = !(self.sonnerieActive);
-	NSLog(@"%hhd", self.sonnerieActive);
+	[[NSUserDefaults standardUserDefaults] setBool:_switchSonnerie.on forKey:@"sonnerieActive"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+	NSLog(@"sonnerie: %hhd (switch: %hhd)", [[NSUserDefaults standardUserDefaults] boolForKey:@"sonnerieActive"], _switchSonnerie.on);
 }
 
 - (IBAction)vibreur:(id)sender {
-	
-	self.vibreurActive = !(self.vibreurActive);
-	NSLog(@"%hhd", self.vibreurActive);
+	[[NSUserDefaults standardUserDefaults] setBool:_switchVibreur.on forKey:@"vibreurActive"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+	NSLog(@"vibreur: %hhd (switch: %hhd)", [[NSUserDefaults standardUserDefaults] boolForKey:@"vibreurActive"], _switchVibreur.on);
 }
 @end

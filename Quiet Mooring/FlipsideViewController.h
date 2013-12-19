@@ -27,7 +27,6 @@
 @property (weak, nonatomic) IBOutlet UISwitch *switchVibreur;
 - (IBAction)sonnerie:(id)sender;
 - (IBAction)vibreur:(id)sender;
-@property (nonatomic, assign) BOOL sonnerieActive;
-@property (nonatomic, assign) BOOL vibreurActive;
+
 
 @end

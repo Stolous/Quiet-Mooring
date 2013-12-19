@@ -20,7 +20,4 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *texteInfo;
 
-@property (nonatomic, assign) BOOL sonnerieActive;
-@property (nonatomic, assign) BOOL vibreurActive;
-
 @end

@@ -33,10 +33,6 @@
 {
 	[self dismissViewControllerAnimated:YES completion:nil];
 	
-	_sonnerieActive = controller.vibreurActive;
-	_vibreurActive = controller.vibreurActive;
-	
-	NSLog(@"sonnerie: %@ vibreur: %@", _sonnerieActive ? @"Oui" : @"Non", _vibreurActive ? @"Oui" : @"Non");
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
