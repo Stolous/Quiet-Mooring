@@ -27,13 +27,6 @@
 	// Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Flipside View
-
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
-{
-	[self dismissViewControllerAnimated:YES completion:nil];
-	// TODO prendre en conte les éventuels changements
-}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -53,6 +46,22 @@
 		[_boutonPrincipal setImage:[UIImage imageNamed:@"OFF"] forState:UIControlStateNormal];
 		NSLog(@"OFF");
 	}
+}
+
+#pragma mark - Flipside View
+
+- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+	// TODO prendre en conte les éventuels changements
+}
+
+#pragma mark - Activation View
+
+- (void)ActivationViewControllerDidFinish:(ActivationViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+	// TODO prendre en conte les éventuels changements
 }
 
 @end

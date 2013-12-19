@@ -7,8 +7,9 @@
 //
 
 #import "FlipsideViewController.h"
+#import "ActivationViewController.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> { // implémente le delegate du FlipsideViwController
+@interface MainViewController : UIViewController <ActivationViewControllerDelegate, FlipsideViewControllerDelegate> { // implémente le delegate du FlipsideViwController
 	
 	BOOL active;
 	int distanceActivation;

@@ -10,6 +10,11 @@
 
 @implementation ActivationViewController
 
+- (void)viewDidLoad {
+	
+}
+
+
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
 	return 1;
@@ -30,4 +35,10 @@
 }
 
 
+- (IBAction)annuler:(id)sender {
+	[self.delegate ActivationViewControllerDidFinish:self];
+}
+
+- (IBAction)valider:(id)sender {
+}
 @end

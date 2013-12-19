@@ -12,6 +12,7 @@
 
 @protocol ActivationViewControllerDelegate // Le protocole est implémenté par le MainViewController
 
+@property (weak, nonatomic) id <ActivationViewControllerDelegate> delegate;
 - (void)activationViewControllerDidFinish:(ActivationViewController *)controller;
 
 @end
@@ -20,6 +21,10 @@
 @interface ActivationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
 	
 }
+
+
+- (IBAction)annuler:(id)sender;
+- (IBAction)valider:(id)sender;
 
 
 
