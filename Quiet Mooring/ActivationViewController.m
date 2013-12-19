@@ -10,4 +10,24 @@
 
 @implementation ActivationViewController
 
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+	return 1;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+	return /*[distances count]*/0;
+}
+
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+	
+	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, pickerView.frame.size.width, 44)];
+	label.backgroundColor = [UIColor grayColor];
+	label.textColor = [UIColor whiteColor];
+	label.textAlignment = NSTextAlignmentCenter;
+	label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:18];
+	//label.text = [distances objectAtIndex:row];
+	return label;
+}
+
+
 @end

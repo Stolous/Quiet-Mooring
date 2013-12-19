@@ -10,16 +10,19 @@
 
 @class FlipsideViewController;
 
-@protocol FlipsideViewControllerDelegate
+@protocol FlipsideViewControllerDelegate // Le protocole est implémenté par le MainViewController
+
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
+
 @end
 
-@interface FlipsideViewController : UIViewController
+@interface FlipsideViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
+	NSMutableArray *distances;
+}
 
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
 
 - (IBAction)done:(id)sender;
-
 
 @property (weak, nonatomic) IBOutlet UIPickerView *distancePicker;
 
@@ -27,6 +30,5 @@
 @property (weak, nonatomic) IBOutlet UISwitch *switchVibreur;
 - (IBAction)sonnerie:(id)sender;
 - (IBAction)vibreur:(id)sender;
-
 
 @end

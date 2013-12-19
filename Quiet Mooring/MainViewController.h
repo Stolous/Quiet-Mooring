@@ -8,12 +8,12 @@
 
 #import "FlipsideViewController.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> { // implémente le delegate du FlipsideViwController
 	
 	BOOL active;
-	
 	int distanceActivation;
 }
+
 
 @property (weak, nonatomic) IBOutlet UIButton *boutonPrincipal;
 - (IBAction)appuiBoutonPrincipal:(id)sender;

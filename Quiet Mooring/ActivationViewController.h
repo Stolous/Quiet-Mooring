@@ -6,8 +6,21 @@
 //  Copyright (c) 2013 Magic Compagny. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ActivationViewController : NSObject
+@class ActivationViewController;
+
+@protocol ActivationViewControllerDelegate // Le protocole est implémenté par le MainViewController
+
+- (void)activationViewControllerDidFinish:(ActivationViewController *)controller;
+
+@end
+
+
+@interface ActivationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
+	
+}
+
+
 
 @end

@@ -32,7 +32,7 @@
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
 {
 	[self dismissViewControllerAnimated:YES completion:nil];
-	
+	// TODO prendre en conte les éventuels changements
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -54,4 +54,5 @@
 		NSLog(@"OFF");
 	}
 }
+
 @end
