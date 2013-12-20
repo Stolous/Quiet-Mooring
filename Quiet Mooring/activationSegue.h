@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface activationSegue : NSObject
+#import "MainViewController.h"
+
+@interface activationSegue : UIStoryboardSegue
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C07121F1864559F00DF029A /* activationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C07121E1864559F00DF029A /* activationSegue.m */; };
 		9C342DBB18634B4600004A0F /* ActivationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C342DBA18634B4600004A0F /* ActivationViewController.m */; };
 		9C668723186044DC00687DAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668722186044DC00687DAA /* Foundation.framework */; };
 		9C668725186044DC00687DAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668724186044DC00687DAA /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C07121D1864559F00DF029A /* activationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activationSegue.h; sourceTree = "<group>"; };
+		9C07121E1864559F00DF029A /* activationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = activationSegue.m; sourceTree = "<group>"; };
 		9C342DB918634B4600004A0F /* ActivationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivationViewController.h; sourceTree = "<group>"; };
 		9C342DBA18634B4600004A0F /* ActivationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivationViewController.m; sourceTree = "<group>"; };
 		9C66871F186044DC00687DAA /* Quiet Mooring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiet Mooring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +130,8 @@
 				9C66873B186044DD00687DAA /* FlipsideViewController.m */,
 				9C342DB918634B4600004A0F /* ActivationViewController.h */,
 				9C342DBA18634B4600004A0F /* ActivationViewController.m */,
+				9C07121D1864559F00DF029A /* activationSegue.h */,
+				9C07121E1864559F00DF029A /* activationSegue.m */,
 				9C66873D186044DD00687DAA /* Images.xcassets */,
 				9C668729186044DC00687DAA /* Supporting Files */,
 			);
@@ -264,6 +269,7 @@
 				9C668739186044DD00687DAA /* MainViewController.m in Sources */,
 				9C66873C186044DD00687DAA /* FlipsideViewController.m in Sources */,
 				9C66872F186044DD00687DAA /* main.m in Sources */,
+				9C07121F1864559F00DF029A /* activationSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

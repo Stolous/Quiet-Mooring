@@ -10,11 +10,9 @@
 #import "ActivationViewController.h"
 
 @interface MainViewController : UIViewController <ActivationViewControllerDelegate, FlipsideViewControllerDelegate> { // implémente le delegate du FlipsideViwController
-	
-	BOOL active;
-	int distanceActivation;
-}
+	@public BOOL active;
 
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *boutonPrincipal;
 - (IBAction)appuiBoutonPrincipal:(id)sender;

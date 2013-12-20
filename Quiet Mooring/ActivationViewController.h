@@ -12,15 +12,21 @@
 
 @protocol ActivationViewControllerDelegate // Le protocole est implémenté par le MainViewController
 
-@property (weak, nonatomic) id <ActivationViewControllerDelegate> delegate;
-- (void)activationViewControllerDidFinish:(ActivationViewController *)controller;
+- (void)activationViewControllerDidFinishStart:(ActivationViewController *)controller;
+- (void)activationViewControllerDidFinishCancel:(ActivationViewController *)controller;
 
 @end
 
 
 @interface ActivationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
-	
+	NSMutableArray *longueursChaine;
+	NSMutableArray *profondeurs;
 }
+
+@property (weak, nonatomic) id <ActivationViewControllerDelegate> delegate;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *chainePicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *profondeurPicker;
 
 
 - (IBAction)annuler:(id)sender;

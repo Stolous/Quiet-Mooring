@@ -23,11 +23,6 @@
 	
 	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background"]];
 	
-	NSDictionary *userDefaultsDefaults = [NSDictionary dictionaryWithObjectsAndKeys:
-										  [NSNumber numberWithBool:YES], @"sonnerieActive",
-										  [NSNumber numberWithBool:NO], @"vibreurActive",
-										  [NSNumber numberWithInt:6], @"distanceActivation", Nil];
-	[[NSUserDefaults standardUserDefaults] registerDefaults:userDefaultsDefaults];
 	
 	[_switchSonnerie setOn:[[NSUserDefaults standardUserDefaults] boolForKey:@"sonnerieActive"] animated:NO];
 	[_switchVibreur setOn:[[NSUserDefaults standardUserDefaults] boolForKey:@"vibreurActive"] animated:NO];

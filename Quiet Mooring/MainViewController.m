@@ -14,10 +14,20 @@
 
 @implementation MainViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background"]];
+	
+	NSDictionary *userDefaultsDefaults = [NSDictionary dictionaryWithObjectsAndKeys:
+										  [NSNumber numberWithBool:YES], @"sonnerieActive",
+										  [NSNumber numberWithBool:NO], @"vibreurActive",
+										  [NSNumber numberWithInt:6], @"distanceActivation",
+										  [NSNumber numberWithInt:6], @"longueurChaine",
+										  [NSNumber numberWithInt:6], @"profondeur", Nil];
+	[[NSUserDefaults standardUserDefaults] registerDefaults:userDefaultsDefaults];
+	
 	active = FALSE; // TODO récupérer le fait que le systeme était activé lors de la dernière fermeture.
 }
 
@@ -30,15 +40,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showAlternate"]) {
+    if ([[segue identifier] isEqualToString:@"showAlternate"] || [[segue identifier] isEqualToString:@"showActivationView"]) {
         [[segue destinationViewController] setDelegate:self];
+		
     }
 }
 
 - (IBAction)appuiBoutonPrincipal:(id)sender {
 	if (active == FALSE) {
-		active = TRUE;
-		[_boutonPrincipal setImage:[UIImage imageNamed:@"ON"] forState:UIControlStateNormal];
+		[self performSegueWithIdentifier:@"showActivationView" sender:self];
 		NSLog(@"ON");
 	}
 	else if (active == TRUE) {
@@ -53,15 +63,24 @@
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
 {
 	[self dismissViewControllerAnimated:YES completion:nil];
-	// TODO prendre en conte les éventuels changements
 }
 
 #pragma mark - Activation View
 
-- (void)ActivationViewControllerDidFinish:(ActivationViewController *)controller
+- (void)activationViewControllerDidFinishCancel:(ActivationViewController *)controller
 {
 	[self dismissViewControllerAnimated:YES completion:nil];
-	// TODO prendre en conte les éventuels changements
+}
+
+- (void)activationViewControllerDidFinishStart:(ActivationViewController *)controller
+{
+	active = TRUE;
+	[_boutonPrincipal setImage:[UIImage imageNamed:@"ON"] forState:UIControlStateNormal];
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(BOOL)isActive {
+	return active;
 }
 
 @end
