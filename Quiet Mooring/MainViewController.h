@@ -9,8 +9,12 @@
 #import "FlipsideViewController.h"
 #import "ActivationViewController.h"
 
-@interface MainViewController : UIViewController <ActivationViewControllerDelegate, FlipsideViewControllerDelegate> { // implémente le delegate du FlipsideViwController
+#import <CoreLocation/CoreLocation.h>
+
+@interface MainViewController : UIViewController <ActivationViewControllerDelegate, FlipsideViewControllerDelegate, CLLocationManagerDelegate> {
 	@public BOOL active;
+	
+	CLLocationManager *locationManager;
 
 }
 
@@ -18,5 +22,20 @@
 - (IBAction)appuiBoutonPrincipal:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *texteInfo;
+
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation;
+
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *debugPos;
+@property (weak, nonatomic) IBOutlet UILabel *debugCap;
+@property (weak, nonatomic) IBOutlet UILabel *debugPrecision;
+
+
 
 @end

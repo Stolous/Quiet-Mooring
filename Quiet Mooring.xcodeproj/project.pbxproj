@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C07121F1864559F00DF029A /* activationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C07121E1864559F00DF029A /* activationSegue.m */; };
+		9C07122118649ACF00DF029A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C07122018649ACF00DF029A /* CoreLocation.framework */; };
 		9C342DBB18634B4600004A0F /* ActivationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C342DBA18634B4600004A0F /* ActivationViewController.m */; };
 		9C668723186044DC00687DAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668722186044DC00687DAA /* Foundation.framework */; };
 		9C668725186044DC00687DAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668724186044DC00687DAA /* CoreGraphics.framework */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		9C07121D1864559F00DF029A /* activationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activationSegue.h; sourceTree = "<group>"; };
 		9C07121E1864559F00DF029A /* activationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = activationSegue.m; sourceTree = "<group>"; };
+		9C07122018649ACF00DF029A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9C342DB918634B4600004A0F /* ActivationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivationViewController.h; sourceTree = "<group>"; };
 		9C342DBA18634B4600004A0F /* ActivationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivationViewController.m; sourceTree = "<group>"; };
 		9C66871F186044DC00687DAA /* Quiet Mooring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiet Mooring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C07122118649ACF00DF029A /* CoreLocation.framework in Frameworks */,
 				9C668725186044DC00687DAA /* CoreGraphics.framework in Frameworks */,
 				9C668727186044DC00687DAA /* UIKit.framework in Frameworks */,
 				9C668723186044DC00687DAA /* Foundation.framework in Frameworks */,
@@ -110,6 +113,7 @@
 		9C668721186044DC00687DAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C07122018649ACF00DF029A /* CoreLocation.framework */,
 				9C668722186044DC00687DAA /* Foundation.framework */,
 				9C668724186044DC00687DAA /* CoreGraphics.framework */,
 				9C668726186044DC00687DAA /* UIKit.framework */,
@@ -336,7 +340,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -398,8 +402,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quiet Mooring/Quiet Mooring-Prefix.pch";
 				INFOPLIST_FILE = "Quiet Mooring/Quiet Mooring-Info.plist";
@@ -413,7 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quiet Mooring/Quiet Mooring-Prefix.pch";

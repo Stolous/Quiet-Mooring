@@ -54,6 +54,24 @@
                                     <action selector="appuiBoutonPrincipal:" destination="rQl-PL-IFJ" eventType="touchDown" id="oX3-NZ-OP8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pos:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRq-TS-DFH">
+                                <rect key="frame" x="43" y="409" width="235" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZP-LE-PqG">
+                                <rect key="frame" x="43" y="430" width="235" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="précision: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG5-Qw-cPc">
+                                <rect key="frame" x="43" y="448" width="235" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
                         <constraints>
@@ -63,6 +81,9 @@
                     </view>
                     <connections>
                         <outlet property="boutonPrincipal" destination="8xd-ZW-DY7" id="oMQ-V8-PNL"/>
+                        <outlet property="debugCap" destination="sZP-LE-PqG" id="zCw-H3-4fE"/>
+                        <outlet property="debugPos" destination="LRq-TS-DFH" id="0wG-xW-sfK"/>
+                        <outlet property="debugPrecision" destination="pG5-Qw-cPc" id="vlQ-ga-yz2"/>
                         <outlet property="texteInfo" destination="tzF-Os-NtY" id="XXI-c6-GCc"/>
                         <segue destination="BBz-5E-YvD" kind="modal" identifier="showActivationView" id="cZi-nB-yyJ"/>
                     </connections>

@@ -30,7 +30,11 @@
 	
 	active = FALSE; // TODO récupérer le fait que le systeme était activé lors de la dernière fermeture.
 	
+	[_texteInfo setText:@"Touchez le bouton pour activer le système."];
 	
+	
+	locationManager = [[CLLocationManager alloc] init];
+	locationManager.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,6 +60,7 @@
 	else if (active == TRUE) {
 		active = FALSE;
 		[_boutonPrincipal setImage:[UIImage imageNamed:@"OFF"] forState:UIControlStateNormal];
+		[_texteInfo setText:@"Touchez le bouton pour activer le système."];
 		NSLog(@"OFF");
 	}
 }
@@ -78,11 +83,31 @@
 {
 	active = TRUE;
 	[_boutonPrincipal setImage:[UIImage imageNamed:@"ON"] forState:UIControlStateNormal];
+	[_texteInfo setText:@"Votre iPhone vous alertera en cas de problème"];
 	[self dismissViewControllerAnimated:YES completion:nil];
+	
+	[locationManager startUpdatingLocation];
+	[locationManager stopUpdatingHeading];
 }
 
--(BOOL)isActive {
-	return active;
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation
+{
+	//[_debugPos setText:[NSString stringWithFormat:[@"Lat: %f long: %f", [newLocation coordinate].latitude, [newLocation coordinate].longitude]]];
 }
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
+	
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+	   didFailWithError:(NSError *)error
+{
+	NSLog(@"Erreur: %@", [error description]);
+}
+
+
 
 @end
