@@ -29,6 +29,8 @@
 	[[NSUserDefaults standardUserDefaults] registerDefaults:userDefaultsDefaults];
 	
 	active = FALSE; // TODO récupérer le fait que le systeme était activé lors de la dernière fermeture.
+	
+	
 }
 
 - (void)didReceiveMemoryWarning

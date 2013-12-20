@@ -52,7 +52,6 @@
                                 </state>
                                 <connections>
                                     <action selector="appuiBoutonPrincipal:" destination="rQl-PL-IFJ" eventType="touchDown" id="oX3-NZ-OP8"/>
-                                    <segue destination="BBz-5E-YvD" kind="custom" identifier="showActivationView" customClass="activationSegue" id="VZd-Ww-O3U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,11 +64,12 @@
                     <connections>
                         <outlet property="boutonPrincipal" destination="8xd-ZW-DY7" id="oMQ-V8-PNL"/>
                         <outlet property="texteInfo" destination="tzF-Os-NtY" id="XXI-c6-GCc"/>
+                        <segue destination="BBz-5E-YvD" kind="modal" identifier="showActivationView" id="cZi-nB-yyJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4L-l5-tyG" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-32" y="151"/>
+            <point key="canvasLocation" x="32" y="39"/>
         </scene>
         <!--Activation View Controller - ActivationView-->
         <scene sceneID="72J-Ho-xEl">
@@ -162,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxD-If-MHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="-212"/>
+            <point key="canvasLocation" x="486" y="-264"/>
         </scene>
         <!--Flipside View Controller-->
         <scene sceneID="z9J-Vg-hzE">
@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlJ-1o-FvB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="527"/>
+            <point key="canvasLocation" x="486" y="319"/>
         </scene>
     </scenes>
     <resources>
